@@ -1,5 +1,10 @@
 package model;
 
+/*DEVELOPERS:
+ * Dhana Steen, ID# 1803365
+ * Sassania Hibbert, ID# 1901202
+ */
+ 
 import java.io.Serializable;
 
 public class Date implements Serializable {
@@ -11,12 +16,14 @@ public class Date implements Serializable {
 	private int month;
 	private int year;
 	
+	//Primary Constructors
 	public Date(int day, int month, int year) {
 		this.day = day;
 		this.month = month;
 		this.year = year;
 	}
 
+	//Getters and Setters
 	public int getDay() {
 		return day;
 	}
