@@ -1,6 +1,10 @@
 package domain;
 
-
+/*DEVELOPERS:
+ * Dhana Steen, ID# 1803365
+ * Sassania Hibbert, ID# 1901202
+ */
+ 
 import server.Server;
 import view.AdvisorDashBoard;
 import view.LiveChat;
