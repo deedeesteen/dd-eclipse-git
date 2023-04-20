@@ -22,6 +22,11 @@ public class User {
 		this.userType = userType;
 	}
 
+	//Constructor for Service
+	public User(String id) {
+		this.id = id;
+	}
+	
 	//Getters and Setters
 	public String getId() {
 		return id;
