@@ -1,29 +1,33 @@
 package model;
 
+/*DEVELOPERS:
+ * Dhana Steen, ID# 1803365
+ * Sassania Hibbert, ID# 1901202
+ */
+ 
 import java.io.Serializable;
 
-public class Service implements Serializable {
+public class Service extends User implements Serializable {
 	private String serviceID;
-	private  String studentID;
-	private String advisorId;
 	private Date date_opened;
 	private Date date_resolved;
 	
+	public Service(String id){
+		super(id);
+	}
 	
+	//Default Constructor
 	public Service() {
-		super();
 		this.serviceID = "";
-		this.studentID = "";
-		this.advisorId = "";
+		this.id = "";
 		this.date_opened = new Date(1,1,2023);
 		this.date_resolved = new Date(1,1,2023);
 	}
 	
-	public Service(String serviceID, String studentID, String advisorId, Date date_opened, Date date_resolved) {
-		super();
+	//Primary Constructor
+	public Service(String serviceID, String id, Date date_opened, Date date_resolved) {
 		this.serviceID = serviceID;
-		this.studentID = studentID;
-		this.advisorId = advisorId;
+		this.id = id;
 		this.date_opened = date_opened;
 		this.date_resolved = date_resolved;
 	}
@@ -33,17 +37,11 @@ public class Service implements Serializable {
 	public void setServiceID(String serviceID) {
 		this.serviceID = serviceID;
 	}
-	public String getStudentID() {
-		return studentID;
+	public String getId() {
+		return id;
 	}
-	public void setStudentID(String studentID) {
-		this.studentID = studentID;
-	}
-	public String getAdvisorId() {
-		return advisorId;
-	}
-	public void setAdvisorId(String advisorId) {
-		this.advisorId = advisorId;
+	public void setId(String id) {
+		this.id = id;
 	}
 	public Date getDate_opened() {
 		return date_opened;
