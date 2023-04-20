@@ -8,17 +8,27 @@ package model;
 import server.UserType;
 
 public class User {
+	private String id;
 	private String firstName;
 	private String lastName;
-	private String id;
 	private UserType userType;
 	
-	public User(String firstName, String lastName, String id, UserType userType) {
+	//Primary Constructor
+	public User(String id, String firstName, String lastName, UserType userType) {
 		super();
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.id = id;
 		this.userType = userType;
+	}
+
+	//Getters and Setters
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -36,15 +46,7 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
+	
 	public UserType getUserType() {
 		return userType;
 	}
