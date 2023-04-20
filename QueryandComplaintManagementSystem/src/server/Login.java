@@ -1,4 +1,10 @@
 package server;
+
+/*DEVELOPERS:
+ * Dhana Steen, ID# 1803365
+ * Sassania Hibbert, ID# 1901202
+ */
+ 
 import java.io.Serializable;
 
 public class Login implements Serializable{
@@ -7,6 +13,7 @@ public class Login implements Serializable{
 	private String password;
 	private UserType userType;
 	
+	//Getters and Setters
 	public String getId() {
 		return id;
 	}
