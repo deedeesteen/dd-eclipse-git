@@ -140,4 +140,22 @@ public class CrudHelper {
 			
 		}
 	}
+	
+	public void getComplaint(String ComplaintID, String category) {
+		String selectCompSQL = "SELECT * FROM studentservices.Complaint WHERE ComplaintID = '" +ComplaintID+ "'";
+		try {
+			stmt = dbConn.createStatement();
+			result = stmt.executeQuery(selectCompSQL);
+			while(result.next()) {
+				 String  ComplaintID = result.getString("ComplaintID");
+				 String  category = result.getString("category");
+				 System.out.println("ComplaintID: " + ComplaintID + "\nCategory: " + category);	 	 
+			}
+		}catch(SQLException e) {
+			System.err.println("SQL EXCEPTION:" +e.getMessage());
+			
+		}catch(Exception e) {
+			
+		}
+	}
 }
