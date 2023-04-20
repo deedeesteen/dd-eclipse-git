@@ -1,5 +1,10 @@
 package view;
 
+/*DEVELOPERS:
+ * Dhana Steen, ID# 1803365
+ * Sassania Hibbert, ID# 1901202
+ */
+ 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
