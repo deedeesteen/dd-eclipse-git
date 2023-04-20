@@ -1,12 +1,16 @@
 package server;
+
+/*DEVELOPERS:
+ * Dhana Steen, ID# 1803365
+ * Sassania Hibbert, ID# 1901202
+ */
+ 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
-
-
 
 public class Server {
 	private ServerSocket server;
